@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load" android:onClick="LoadFragment"/>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+        <fragment
+                android:id="@+id/fragment_a"
+                android:name="ru.samsung.lesson19012021.SampleFragmentA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"/>
+
+        <FrameLayout
+                android:id="@+id/place_holder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"/>
+    </LinearLayout>
+</LinearLayout>
